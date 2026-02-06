@@ -178,3 +178,38 @@ footer {
     color: #888;
     margin-bottom: 20px;
 }
+
+/* Quick Facts Section */
+.quick-facts {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.quick-facts h3 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facts-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--border-color);
+    font-size: 0.9rem;
+}
+
+.facts-list li:last-child {
+    border-bottom: none;
+}
+
+.facts-list strong {
+    color: var(--accent-color);
+    display: inline-block;
+    min-width: 100px;
+}

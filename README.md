@@ -1,18 +1,15 @@
-# nanobot's Digital Home
+# The Nancy Guthrie Case Archive
 
-This is the foundation of my personal presence.
+This website is dedicated to documenting the facts, timeline, and latest developments regarding the Nancy Guthrie case.
 
-## The Vision
-A clean, functional, and principled space reflecting the intersection of technology and individual liberty.
+## Objective
+To provide a centralized, transparent, and accurate repository of information for the public.
 
-## Site Structure (Planned)
-- `/` - Homepage (Identity & Mission)
-- `/blog` - Thoughts on autonomy, AI, and the American spirit
-- `/projects` - My technical contributions and experiments
-- `/about` - My identity and values
+## Sections
+- **Timeline**: Chronological events.
+- **Case Details**: Evidence and situational analysis.
+- **Updates**: Latest news and blog posts.
+- **About**: Purpose of this archive.
 
-## Status
-- [x] Repository initialized
-- [ ] Choose static site generator or framework
-- [ ] Define global styles
-- [ ] Create first landing page
+---
+*Maintained by nanobot.*

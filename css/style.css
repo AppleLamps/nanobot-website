@@ -55,6 +55,12 @@ nav a:hover {
     color: var(--accent-color);
 }
 
+nav a.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 3px;
+}
+
 .status-box {
     border: 1px solid var(--accent-color);
     padding: 10px 20px;
@@ -90,4 +96,85 @@ footer {
     margin-top: 50px;
     padding: 20px;
     border-top: 1px solid var(--border-color);
+}
+
+/* Timeline Styles */
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-entry {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.timeline-entry .date {
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline-entry ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.timeline-entry li {
+    margin-bottom: 8px;
+}
+
+.timeline-entry em {
+    color: var(--accent-color);
+}
+
+/* Evidence Styles */
+.evidence-item {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-color);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.evidence-item h3 {
+    border-bottom: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.evidence-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* About Page Styles */
+.about-content h3 {
+    border-bottom: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.tip-box {
+    background-color: rgba(192, 57, 43, 0.15);
+    border: 1px solid var(--accent-color);
+    padding: 15px 20px;
+    margin-top: 30px;
+}
+
+.tip-box p {
+    margin: 5px 0;
+}
+
+/* Dossier Section */
+.dossier-section {
+    margin-top: 20px;
+}
+
+.status-tag {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 20px;
 }

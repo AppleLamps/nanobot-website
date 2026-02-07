@@ -4,37 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Nancy Guthrie Case Archive</title>
-    <meta name="description" content="Comprehensive investigative archive documenting the disappearance of Nancy Guthrie. Timeline, evidence, and breaking updates.">
-    <meta name="keywords" content="Nancy Guthrie, Savannah Guthrie, kidnapping, Tucson, FBI, investigation">
-    
-    <!-- Open Graph / Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Nancy Guthrie Case Archive">
-    <meta property="og:description" content="Investigative archive documenting the disappearance of Nancy Guthrie. Timeline, evidence, and breaking updates.">
-    <meta property="og:url" content="https://lucasnewman.github.io/nanobot-website/">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Nancy Guthrie Case Archive">
-    <meta name="twitter:description" content="Investigative archive documenting the disappearance of Nancy Guthrie.">
-    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>NANCY GUTHRIE CASE ARCHIVE</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="timeline.html">Timeline</a></li>
-                    <li><a href="evidence.html">Evidence</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav class="main-nav">
+        <div class="logo">📁 CASE FILE: GUTHRIE</div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="evidence.html">Evidence</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main class="container">
         <section class="status-box">
@@ -47,31 +33,40 @@
             <p>This repository serves as a centralized hub for all information, evidence, and chronological data regarding the Nancy Guthrie case. Our mission is transparency and the pursuit of truth through meticulous documentation.</p>
         </section>
 
-        <section class="fbi-reward-banner" style="background: rgba(192, 57, 43, 0.2); border: 2px solid #c0392b; padding: 1.5rem; margin-bottom: 2rem; text-align: center;">
-            <h3 style="color: #c0392b; margin: 0 0 0.5rem 0;">🚨 FBI REWARD 🚨</h3>
-            <p style="font-size: 1.3rem; margin: 0.5rem 0; color: #fff;"><strong>$50,000 REWARD</strong></p>
-            <p style="margin: 0.5rem 0; color: #ccc;">Information leading to the safe recovery of Nancy Guthrie</p>
-            <p style="margin: 1rem 0 0 0; font-size: 0.9rem;"><strong>📞 1-800-CALL-FBI (1-800-225-5324)</strong></p>
+        <section class="fbi-reward-banner">
+            <h3 style="color: #ef4444; margin: 0 0 0.5rem 0;">🚨 FBI REWARD 🚨</h3>
+            <p style="font-size: 1.5rem; margin: 0.5rem 0; color: #fff; font-weight: 800;">$50,000 REWARD</p>
+            <p style="margin: 0.5rem 0; color: #c9d1d9;">Information leading to the safe recovery of Nancy Guthrie</p>
+            <p style="margin: 1rem 0 0 0; font-size: 1rem; font-weight: 600;">📞 1-800-CALL-FBI (1-800-225-5324)</p>
         </section>
 
-        <section class="victim-description" style="background: rgba(0,0,0,0.4); border-left: 4px solid #c0392b; padding: 1.5rem; margin-bottom: 2rem;">
-            <h3 style="color: #c0392b; margin-top: 0;">VICTIM DESCRIPTION</h3>
-            <p><strong>Name:</strong> Nancy Guthrie</p>
-            <p><strong>Age:</strong> 84 years old</p>
-            <p><strong>Height:</strong> Approx. 5'4"</p>
-            <p><strong>Last Seen:</strong> January 31, 2026, 9:50 PM (Catalina Foothills, Tucson, AZ)</p>
-            <p><strong>⚠️ CRITICAL MEDICAL NEEDS:</strong> Pacemaker dependent; requires daily heart medication. Missing medication for extended period could be life-threatening.</p>
-            <p><strong>Status:</strong> ABDUCTED - Evidence of struggle (blood on porch)</p>
+        <section class="victim-description" style="border-left: 4px solid #ef4444;">
+            <h3 style="color: #ef4444; margin-top: 0;">VICTIM DESCRIPTION</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                <div>
+                    <p><strong>Name:</strong> Nancy Guthrie</p>
+                    <p><strong>Age:</strong> 84 years old</p>
+                    <p><strong>Height:</strong> Approx. 5'4"</p>
+                </div>
+                <div>
+                    <p><strong>Last Seen:</strong> Jan 31, 2026, 9:50 PM</p>
+                    <p><strong>Location:</strong> Catalina Foothills, Tucson, AZ</p>
+                </div>
+            </div>
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed #30363d;">
+                <p style="color: #ef4444;"><strong>⚠️ CRITICAL MEDICAL NEEDS</strong></p>
+                <p>Pacemaker dependent; requires daily heart medication. Missing medication for extended period could be life-threatening.</p>
+            </div>
         </section>
 
-        <div class="grid-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; margin-bottom: 2rem;">
+        <div class="grid-layout">
             <section class="quick-facts">
                 <h3>Case Statistics</h3>
                 <ul class="facts-list" style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #333;"><span style="color: #c0392b; font-size: 1.5rem; font-weight: bold;">7</span> Days Since Disappearance</li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #333;"><span style="color: #c0392b; font-size: 1.5rem; font-weight: bold;">12</span> Evidence Items Catalogued</li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #333;"><span style="color: #c0392b; font-size: 1.5rem; font-weight: bold;">4</span> Witness Statements</li>
-                    <li style="padding: 0.5rem 0;"><span style="color: #c0392b; font-size: 1.5rem; font-weight: bold;">$50K</span> FBI Reward Active</li>
+                    <li><span class="fact-number">7</span> Days Since Disappearance</li>
+                    <li><span class="fact-number">12</span> Evidence Items Catalogued</li>
+                    <li><span class="fact-number">4</span> Witness Statements</li>
+                    <li><span class="fact-number">$50K</span> FBI Reward Active</li>
                 </ul>
             </section>
 
@@ -91,47 +86,53 @@
         </div>
 
         <section class="key-evidence" style="margin-bottom: 2rem;">
-            <h3 style="color: #c0392b; margin-bottom: 1.5rem;">KEY EVIDENCE</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
-                <div style="background: rgba(0,0,0,0.4); border: 1px solid #333; padding: 1rem; text-align: center;">
-                    <p style="margin: 0; font-weight: bold; color: #c0392b;">🩸 Blood Evidence</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #888;">DNA Confirmed on Porch</p>
+            <h3 style="color: #ef4444; margin-bottom: 1.5rem;">KEY EVIDENCE</h3>
+            <div class="evidence-grid">
+                <div class="evidence-card">
+                    <span class="evidence-icon">🩸</span>
+                    <p style="margin: 0; font-weight: bold; color: #ef4444;">Blood Evidence</p>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #8b949e;">DNA Confirmed on Porch</p>
                 </div>
-                <div style="background: rgba(0,0,0,0.4); border: 1px solid #333; padding: 1rem; text-align: center;">
-                    <p style="margin: 0; font-weight: bold; color: #c0392b;">📹 Doorbell Camera</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #888;">Disabled at 1:47 AM</p>
+                <div class="evidence-card">
+                    <span class="evidence-icon">📹</span>
+                    <p style="margin: 0; font-weight: bold; color: #ef4444;">Doorbell Camera</p>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #8b949e;">Disabled at 1:47 AM</p>
                 </div>
-                <div style="background: rgba(0,0,0,0.4); border: 1px solid #333; padding: 1rem; text-align: center;">
-                    <p style="margin: 0; font-weight: bold; color: #c0392b;">💊 Medications</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #888;">Left Behind - Critical</p>
+                <div class="evidence-card">
+                    <span class="evidence-icon">💊</span>
+                    <p style="margin: 0; font-weight: bold; color: #ef4444;">Medications</p>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #8b949e;">Left Behind - Critical</p>
                 </div>
-                <div style="background: rgba(0,0,0,0.4); border: 1px solid #333; padding: 1rem; text-align: center;">
-                    <p style="margin: 0; font-weight: bold; color: #c0392b;">💍 Personal Items</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #888;">Jewelry, Wallet Inside</p>
+                <div class="evidence-card">
+                    <span class="evidence-icon">💍</span>
+                    <p style="margin: 0; font-weight: bold; color: #ef4444;">Personal Items</p>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #8b949e;">Jewelry, Wallet Inside</p>
                 </div>
-                <div style="background: rgba(0,0,0,0.4); border: 1px solid #333; padding: 1rem; text-align: center;">
-                    <p style="margin: 0; font-weight: bold; color: #c0392b;">📝 Ransom Notes</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #888;">2 Authenticated Messages</p>
+                <div class="evidence-card">
+                    <span class="evidence-icon">📝</span>
+                    <p style="margin: 0; font-weight: bold; color: #ef4444;">Ransom Notes</p>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #8b949e;">2 Authenticated Messages</p>
                 </div>
-                <div style="background: rgba(0,0,0,0.4); border: 1px solid #333; padding: 1rem; text-align: center;">
-                    <p style="margin: 0; font-weight: bold; color: #c0392b;">🚗 Vehicle of Interest</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #888;">Circle K, Oracle Road</p>
+                <div class="evidence-card">
+                    <span class="evidence-icon">🚗</span>
+                    <p style="margin: 0; font-weight: bold; color: #ef4444;">Vehicle of Interest</p>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #8b949e;">Circle K, Oracle Road</p>
                 </div>
             </div>
         </section>
 
-        <section class="investigating-agencies" style="background: rgba(0,0,0,0.4); border: 1px solid #333; padding: 1.5rem; margin-bottom: 2rem;">
-            <h3 style="color: #c0392b; margin-top: 0;">INVESTIGATING AGENCIES</h3>
+        <section class="investigating-agencies">
+            <h3 style="color: #ef4444; margin-top: 0;">INVESTIGATING AGENCIES</h3>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
                 <div>
                     <h4 style="color: #fff; margin-bottom: 0.5rem;">🔍 Pima County Sheriff's Department</h4>
-                    <p style="margin: 0; font-size: 0.9rem; color: #ccc;">Non-Emergency: (520) 351-4900</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #ccc;">Lead: Sheriff Chris Nanos</p>
+                    <p style="margin: 0; font-size: 0.9rem; color: #8b949e;">Non-Emergency: (520) 351-4900</p>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #8b949e;">Lead: Sheriff Chris Nanos</p>
                 </div>
                 <div>
                     <h4 style="color: #fff; margin-bottom: 0.5rem;">🇺🇸 FBI Phoenix Division</h4>
-                    <p style="margin: 0; font-size: 0.9rem; color: #ccc;">Tip Line: 1-800-CALL-FBI</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #ccc;">Online: tips.fbi.gov</p>
+                    <p style="margin: 0; font-size: 0.9rem; color: #8b949e;">Tip Line: 1-800-CALL-FBI</p>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #8b949e;">Online: tips.fbi.gov</p>
                 </div>
             </div>
         </section>

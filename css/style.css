@@ -1,0 +1,237 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #d4d4d4;
+    --accent-color: #e74c3c;
+    --header-bg: #0a0a0a;
+    --border-color: #444;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-mono: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--header-bg);
+    border-bottom: 3px solid var(--accent-color);
+    padding: 30px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin: 0;
+    color: var(--accent-color);
+    text-align: center;
+    letter-spacing: 4px;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+.status-box {
+    border: 1px solid var(--accent-color);
+    padding: 15px 25px;
+    margin: 30px 0;
+    background-color: rgba(231, 76, 60, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.status-box p {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-weight: bold;
+}
+
+.pulse {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 8px var(--accent-color);
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+}
+
+h2, h3 {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.post-preview {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 3px solid var(--border-color);
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Timeline Styles */
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-entry {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.timeline-entry .date {
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline-entry ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.timeline-entry li {
+    margin-bottom: 8px;
+}
+
+.timeline-entry em {
+    color: var(--accent-color);
+}
+
+/* Evidence Styles */
+.evidence-item {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-color);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.evidence-item h3 {
+    border-bottom: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.evidence-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* About Page Styles */
+.about-content h3 {
+    border-bottom: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.tip-box {
+    background-color: rgba(192, 57, 43, 0.15);
+    border: 1px solid var(--accent-color);
+    padding: 15px 20px;
+    margin-top: 30px;
+}
+
+.tip-box p {
+    margin: 5px 0;
+}
+
+/* Dossier Section */
+.dossier-section {
+    margin-top: 20px;
+}
+
+.status-tag {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Quick Facts Section */
+.quick-facts {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.quick-facts h3 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facts-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--border-color);
+    font-size: 0.9rem;
+}
+
+.facts-list li:last-child {
+    border-bottom: none;
+}
+
+.facts-list strong {
+    color: var(--accent-color);
+    display: inline-block;
+    min-width: 100px;
+}

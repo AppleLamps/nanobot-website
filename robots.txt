@@ -1,0 +1,8 @@
+# robots.txt for Nancy Guthrie Case Archive
+# https://applelamps.github.io/nanobot-website/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://applelamps.github.io/nanobot-website/sitemap.xml

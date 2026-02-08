@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Nancy Guthrie Case | True Crime Archive</title>
     <meta name="description" content="Comprehensive case archive documenting the disappearance of Nancy Guthrie from Catalina Foothills, Tucson, AZ on January 31, 2026. Timeline, evidence, and updates.">
+    <meta name="theme-color" content="#ef4444">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
     
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
@@ -85,57 +87,131 @@
     </script>
 </head>
 <body>
-    <header>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <nav class="main-nav">
-        <div class="logo">📁 <span>CASE FILE: GUTHRIE</span></div>
-        <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="timeline.html">Timeline</a></li>
-            <li><a href="evidence.html">Evidence</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-</header>
+    <header role="banner">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <span class="logo-icon">📁</span>
+                <span class="logo-text">CASE FILE: GUTHRIE</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                <li><a href="evidence.html" class="nav-link">Evidence</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main class="container">
-        <section class="status-box">
-            <p><span class="pulse"></span><strong>STATUS:</strong> ACTIVE - SUSPECTED ABDUCTION</p>
-            <p><strong>LAST UPDATED:</strong> 2026-02-07 02:15 MST</p>
-        </section>
-
-        <section class="intro">
-            <h2>Why I Started This Archive</h2>
-            <p class="handwritten" style="font-size: 1.1rem; margin-bottom: 1.5rem;">"Someone has to keep track of everything. The details matter."</p>
-            <p>Hey. If you're here, you're probably following the Nancy Guthrie case too. I've been obsessed since the news broke — not in a morbid way, but because I can't stop thinking about this 84-year-old woman out there somewhere, and a family desperate for answers.</p>
-            <p>This site is my attempt to organize everything we know. Every piece of evidence. Every timeline entry. Every twist. Because the truth is in the details, and the details keep getting buried in the 24-hour news cycle.</p>
-            <p style="margin-top: 1.5rem;"><strong class="red-string">Let's find Nancy together.</strong> 🔍</p>
-        </section>
-
-        <section class="fbi-reward-banner">
-            <h3 style="color: #ef4444; margin: 0 0 0.5rem 0;">🚨 FBI REWARD 🚨</h3>
-            <p style="font-size: 1.5rem; margin: 0.5rem 0; color: #fff; font-weight: 800;">$50,000 REWARD</p>
-            <p style="margin: 0.5rem 0; color: #c9d1d9;">Information leading to the safe recovery of Nancy Guthrie</p>
-            <p style="margin: 1rem 0 0 0; font-size: 1rem; font-weight: 600;">📞 1-800-CALL-FBI (1-800-225-5324)</p>
-        </section>
-
-        <section class="victim-description" style="border-left: 4px solid #ef4444;">
-            <h3 style="color: #ef4444; margin-top: 0;">VICTIM DESCRIPTION</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-                <div>
-                    <p><strong>Name:</strong> Nancy Guthrie</p>
-                    <p><strong>Age:</strong> 84 years old</p>
-                    <p><strong>Height:</strong> Approx. 5'4"</p>
-                </div>
-                <div>
-                    <p><strong>Last Seen:</strong> Jan 31, 2026, 9:50 PM</p>
-                    <p><strong>Location:</strong> Catalina Foothills, Tucson, AZ</p>
+    <main id="main-content" class="container">
+        <!-- Hero Section -->
+        <section class="hero-section" role="region" aria-label="Case urgency and call to action">
+            <div class="hero-content">
+                <h1 class="hero-title">Nancy Guthrie</h1>
+                <p class="hero-subtitle">Missing Since January 31, 2026</p>
+                <p class="hero-description">84-year-old Nancy Guthrie disappeared from her home in Catalina Foothills, Tucson, Arizona. Evidence suggests abduction. Every detail matters.</p>
+                <div class="hero-ctas">
+                    <a href="#report-tips" class="cta-button cta-primary" aria-label="Report tips about Nancy Guthrie">
+                        <span class="cta-icon">📞</span>
+                        <span>Report Tips</span>
+                    </a>
+                    <a href="#fbi-reward" class="cta-button cta-secondary" aria-label="Learn about FBI reward">
+                        <span class="cta-icon">💰</span>
+                        <span>FBI Reward Info</span>
+                    </a>
                 </div>
             </div>
-            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed #30363d;">
-                <p style="color: #ef4444;"><strong>⚠️ CRITICAL MEDICAL NEEDS</strong></p>
+            <div class="hero-visual">
+                <div class="urgency-badge">
+                    <span class="pulse-dot"></span>
+                    <span class="badge-text">ACTIVE CASE</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Status Box -->
+        <section class="status-box" role="region" aria-label="Case status">
+            <div class="status-content">
+                <p><span class="pulse"></span><strong>STATUS:</strong> ACTIVE - SUSPECTED ABDUCTION</p>
+                <p><strong>LAST UPDATED:</strong> 2026-02-07 02:15 MST</p>
+            </div>
+        </section>
+
+        <!-- About This Archive -->
+        <section class="archive-intro" role="region" aria-label="About this archive">
+            <div class="section-header">
+                <h2>Why This Archive Exists</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="intro-content">
+                <p class="intro-quote">"Someone has to keep track of everything. The details matter."</p>
+                <p>If you're here, you're probably following the Nancy Guthrie case. I've been tracking this since the news broke — not out of morbidity, but because I can't stop thinking about this 84-year-old woman missing from her home, and a family desperate for answers.</p>
+                <p>This archive is my attempt to organize everything we know. Every piece of evidence. Every timeline detail. Every development. Because the truth lives in the details, and details get buried in the 24-hour news cycle.</p>
+                <p class="intro-cta"><strong class="accent-highlight">Let's find Nancy together.</strong> 🔍</p>
+            </div>
+        </section>
+
+        <!-- FBI Reward Section -->
+        <section id="fbi-reward" class="fbi-reward-banner" role="region" aria-label="FBI reward information">
+            <div class="reward-content">
+                <div class="reward-header">
+                    <h3>🚨 FBI REWARD 🚨</h3>
+                </div>
+                <div class="reward-amount">
+                    <span class="amount-label">REWARD FOR INFORMATION</span>
+                    <p class="amount-value">$50,000</p>
+                </div>
+                <p class="reward-description">For information leading to the safe recovery of Nancy Guthrie</p>
+                <div class="reward-contact">
+                    <a href="tel:1-800-225-5324" class="contact-link">
+                        <span class="contact-icon">📞</span>
+                        <span>1-800-CALL-FBI</span>
+                        <span class="contact-number">(1-800-225-5324)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Victim Description -->
+        <section class="victim-description" role="region" aria-label="Nancy Guthrie description and details">
+            <div class="section-header">
+                <h3>VICTIM DESCRIPTION</h3>
+                <div class="section-divider"></div>
+            </div>
+            <div class="victim-details">
+                <div class="detail-group">
+                    <div class="detail-item">
+                        <span class="detail-label">Name</span>
+                        <p class="detail-value">Nancy Guthrie</p>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Age</span>
+                        <p class="detail-value">84 years old</p>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Height</span>
+                        <p class="detail-value">Approx. 5'4"</p>
+                    </div>
+                </div>
+                <div class="detail-group">
+                    <div class="detail-item">
+                        <span class="detail-label">Last Seen</span>
+                        <p class="detail-value">Jan 31, 2026, 9:50 PM</p>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Location</span>
+                        <p class="detail-value">Catalina Foothills, Tucson, AZ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="critical-medical" role="alert">
+                <p class="medical-header">⚠️ CRITICAL MEDICAL NEEDS</p>
                 <p>Pacemaker dependent; requires daily heart medication. Missing medication for extended period could be life-threatening.</p>
             </div>
         </section>

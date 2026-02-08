@@ -1,0 +1,181 @@
+/* Print Stylesheet for Nancy Guthrie Case Archive
+   Optimized for printing case information */
+
+@media print {
+    /* Reset backgrounds and colors for printing */
+    *, *::before, *::after {
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        background-image: none !important;
+    }
+
+    /* Hide navigation and non-essential elements */
+    header,
+    .main-nav,
+    .mobile-menu-toggle,
+    .skip-link,
+    .hero-ctas,
+    .cta-button,
+    footer,
+    .pulse,
+    .pulse-dot {
+        display: none !important;
+    }
+
+    /* Page layout */
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Headings */
+    h1, h2, h3, h4 {
+        color: #000 !important;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    h1 {
+        font-size: 24pt;
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 18pt;
+        border-bottom: 1px solid #666;
+    }
+
+    h3 {
+        font-size: 14pt;
+        color: #333 !important;
+    }
+
+    /* Ensure important info is visible */
+    .hero-section {
+        text-align: center;
+        margin-bottom: 20pt;
+        border-bottom: 2px solid #000;
+        padding-bottom: 20pt;
+    }
+
+    .hero-title {
+        font-size: 28pt;
+        margin-bottom: 5pt;
+    }
+
+    .hero-subtitle {
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
+    /* Status box */
+    .status-box {
+        border: 2px solid #000 !important;
+        padding: 10pt;
+        margin: 15pt 0;
+    }
+
+    /* FBI Reward - make it prominent */
+    .fbi-reward-banner {
+        border: 3px solid #000 !important;
+        padding: 15pt;
+        margin: 20pt 0;
+        text-align: center;
+    }
+
+    .fbi-reward-banner::before {
+        display: none;
+    }
+
+    /* Victim description */
+    .victim-description {
+        border: 1px solid #666 !important;
+        padding: 10pt;
+        margin: 15pt 0;
+    }
+
+    .critical-medical {
+        border: 2px solid #000 !important;
+        padding: 10pt;
+        font-weight: bold;
+    }
+
+    /* Grid layouts - stack for print */
+    .grid-layout,
+    .evidence-grid {
+        display: block !important;
+    }
+
+    .evidence-card,
+    .quick-facts,
+    .latest {
+        border: 1px solid #ccc !important;
+        margin-bottom: 10pt;
+        padding: 10pt;
+        page-break-inside: avoid;
+    }
+
+    /* Links - show URL */
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #666 !important;
+    }
+
+    a[href^="tel"]::after {
+        content: none;
+    }
+
+    /* Page breaks */
+    section {
+        page-break-inside: avoid;
+    }
+
+    .post-preview,
+    .timeline-entry {
+        page-break-inside: avoid;
+    }
+
+    /* Timeline adjustments */
+    .timeline-entry {
+        border-left: 2px solid #000 !important;
+    }
+
+    .timeline-entry::before {
+        background: #000 !important;
+    }
+
+    /* Print header */
+    main::before {
+        content: "NANCY GUTHRIE CASE - PRINTED DOCUMENT";
+        display: block;
+        text-align: center;
+        font-size: 10pt;
+        color: #666 !important;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10pt;
+        margin-bottom: 20pt;
+    }
+
+    /* Print footer */
+    main::after {
+        content: "Source: https://applelamps.github.io/nanobot-website/ | FBI Tip Line: 1-800-CALL-FBI";
+        display: block;
+        text-align: center;
+        font-size: 10pt;
+        color: #666 !important;
+        border-top: 1px solid #ccc;
+        padding-top: 10pt;
+        margin-top: 20pt;
+    }
+}

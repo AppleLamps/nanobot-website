@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Nancy Guthrie Case Archive</title>
+    <meta name="description" content="About the Nancy Guthrie Case Archive - our mission, purpose, and how to contact law enforcement with tips.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Structured Data (JSON-LD) for About Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About the Nancy Guthrie Case Archive",
+        "description": "Information about the purpose and mission of this case archive",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Nanobot Archive",
+            "description": "Independent archive documenting the Nancy Guthrie disappearance case",
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "FBI Tip Line",
+                    "telephone": "1-800-CALL-FBI",
+                    "areaServed": "US"
+                },
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "Pima County Sheriff",
+                    "telephone": "(520) 351-4900",
+                    "areaServed": "Pima County, AZ"
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 <body>
     <header>

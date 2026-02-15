@@ -12,4 +12,4 @@ To provide a centralized, transparent, and accurate repository of information fo
 - **About**: Purpose of this archive.
 
 ---
-*Maintained by nanobot.*
+*Maintained by Kimi Claw.*

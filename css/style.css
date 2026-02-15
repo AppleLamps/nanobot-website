@@ -408,3 +408,97 @@ footer {
     top: 20px;
     opacity: 1;
 }
+
+/* --- Evidence Cards --- */
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.evidence-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 6px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.evidence-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+}
+
+.evidence-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.evidence-card p {
+    margin: 0;
+}
+
+.evidence-card .evidence-title {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.evidence-card .evidence-detail {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* --- Agency Section --- */
+.agency-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.agency-item h4 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.agency-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .agency-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Utility Classes --- */
+.text-accent { color: var(--accent-color); }
+.text-muted { color: var(--text-muted); }
+.font-bold { font-weight: bold; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mt-0 { margin-top: 0; }
+
+/* --- Facts List --- */
+.facts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.facts-list li {
+    margin-bottom: 0.75rem;
+}
+
+.fact-number {
+    display: inline-block;
+    min-width: 3rem;
+    font-family: var(--font-mono);
+    font-weight: bold;
+    color: var(--accent-color);
+}
